@@ -1,0 +1,87 @@
+def seventhDecision():
+  decision7 = input("")
+  if decision6 == "":
+    print("")
+
+def sixthDecision():
+    decision6 = input("Do you take this issue of disrespect to your manager or ask for a raise? Input "manager" "raise"")
+    if decision6 == "manager":
+        print("Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’ behavior rude and call him out on his mansplaining.You find your manager’ behavior rude and call him out on his mansplaining. THE END")
+    elif decision6 == "raise":
+        print("You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days")
+        eighthDecision()
+    else:
+        print("Error: You can only input 'manager' or 'raise'.")
+        sixthDecision()
+
+
+def fifthDecision():
+    println("The next day you enter breakroom. Anthony and his group of friends are  all joking around, but they stop when you enter.")
+    decision5 = input("Do you ask him Anthony about the incident later or confront the group right now?Type 'now' or 'later'.")
+    if decision5 == "now":
+        print(" You walk up to the group and say “What are you guys talking about?” In response, you get comments like “Since when were you the boss?")
+        seventhDecision()
+    elif decision5 == "later":
+        print("You ask Anthony about what his friends and him did in the breakroom and he responds with “That’s just guys being guys. When he says this you shoot back with “So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END.”")
+    else:
+        print("Error: You can only input 'yes' or 'no'.")
+        fifthDecision()
+
+
+def fourthDecision():
+    decision4 = input("Do you take the blame or call Anthony out?")
+    if decision4 == "take":
+        print("You are known around the company as a pushover and you lose confidence on yourself. THE END")
+    elif decision4 == "call out":
+        print("The next day you enter breakroom. Anthony and his friends, Adrian, Logan, and Chase are  all joking around, but they stop when you enter.")
+        fithDecision()
+   else:
+        print("Error: You can only input 'take' or 'call out'.")
+        fourthDecision()
+
+
+def thirdDecision():
+    println("One week later, you and your team have finished presenting a project. Your team, a group of guys, decides to head out for drinks. You don’t really feel included, so you don’t go. Before leaving the room, Logan asks if you can stick around and tidy up the meeting room.")
+    decision3 = input("Do you say it’s not your job to do or do you just agree?")
+    if decision3 == "say something":
+        print("All the guys reenter the room and stare at you. Someone mutters “Bitch.” They all reluctantly pick up their trash.While they give you looks, you tell them “You know I do the same amount of work as you, and get paid less. The least you can do is clean up after yourself.")
+        sixthDecision()
+   elif decision3 == "agree":
+        print("Your coworkers now expect you to always clean up. You’re still a valued member of the team but are seen as a secretary as well. THE END.")
+        
+    else:
+        print("Error: You can only input 'say something' or 'agree'.")
+        thirdDecision()
+
+
+function secondDecision() {
+    decision2 = input("Do you try to keep your cool or tell him what he’s doing wrong? input "keep cool" or "tell him"")
+    if (decision2 == "keep cool") {
+        print("Anthony keeps making this mistake, resulting in time being wasted. Your manager is annoyed and your team gets a bad reputation for not getting work done. → Bad Rep Decision")
+        fourthDecision()
+    elif (ecision2 == "tell him")
+        print(" Anthony gets really annoyed with you for calling him out.")
+        fithDecision()
+    else:
+        print("Error: You can only input 'keep cool' or 'tell him'.")
+        secondDecision()
+}
+
+// This is the first part of the story.
+function firstDecision() {
+println(“You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior”);
+    var decision1 = input("Do you dismiss this or go talk to your manager?");
+    if (decision1 == "dismiss") {
+        print("Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ");
+        secondDecision()
+   } else if (decision1 == "talk to manager") {
+        print("Your manager, Jack, says “(player’s name), Anthony was the only one available and somebody’s gotta check your code!”);
+        thirdDecision()
+     } else {
+        println("Error: You can only input the options given.")
+        firstDecision()
+        }
+    }
+
+
+firstDecision()
