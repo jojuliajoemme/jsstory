@@ -1,5 +1,5 @@
 function eighthDecision() {
-   var decision8 = readLine("Do you accept the vacation days or take this up with your manager’s boss? Input 'vacation' or 'boss'");
+   var decision8 = readLine("You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days. Do you accept the vacation days or take this up with your manager’s boss? Input 'vacation' or 'boss'");
    if (decision8 == "vacation") {
      document.getElementById("textBox").innerHTML = "You accept the extra vacation and use them to go to Hawaii. When you get back from your vacation, you realize you haven’t made any positive change in your work life as you had hoped. You realize you need to be more assertive. THE END.";
      endGame()
@@ -11,12 +11,13 @@ function eighthDecision() {
    }
   
  function seventhDecision() {
-   var decision7 = readLine(" Do you talk to your manager about their behavior or make a face at them? Input 'manager' or 'face'");
+   var decision7 = readLine("You walk up to the group and say “What are you guys talking about?” In response, you get comments like “Since when were you the boss? Do you talk to your manager about their behavior or make a face at them? Input 'manager' or 'face'");
    if (decision7 == "manager") {
-     document.getElementById("textBox").innerHTML = "You’re still a valued member of the team but are seen as a secretary as well. THE END.";
+     document.getElementById("textBox").innerHTML = "";
      endGame()
    } else if (decision7 == "face") {
-      document.getElementById("textBox").innerHTML = "Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone.";
+      document.getElementById("textBox").innerHTML = "Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone. You’re still a valued member of the team but are seen as a secretary as well. THE END.";
+      endGame()
    } else {
      document.getElementById("textBox").innerHTML = "Error: You can only input 'manager' or 'face'.";
    }
@@ -26,7 +27,6 @@ function eighthDecision() {
          document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’ behavior rude and call him out on his mansplaining.You find your manager’ behavior rude and call him out on his mansplaining. THE END";
         endGame()
      } else if (decision6 == "raise") {
-         document.getElementById("textBox").innerHTML = "You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days";
          eighthDecision()
      } else {
          document.getElementById("textBox").innerHTML = "Error: You can only input 'manager' or 'raise'.";
@@ -34,10 +34,8 @@ function eighthDecision() {
          }
  }
  function fifthDecision() {
-     document.getElementById("textBox").innerHTML = "Anthony gets really annoyed with you for calling him out. The next day you enter breakroom. Anthony and his friends, Adrian, Logan, and Chase are  all joking around, but they stop when you enter.";
-     var decision5 = readLine("Do you ask him Anthony about the incident later or confront the group right now?Type 'now' or 'later'.");
+     document.getElementById("textBox").innerHTML = "Anthony gets really annoyed with you for calling him out. The next day you enter breakroom. Anthony and his friends, Adrian, Logan, and Chase are  all joking around, but they stop when you enter. Do you ask him Anthony about the incident later or confront the group right now?";
      if (decision5 == "now") {
-         document.getElementById("textBox").innerHTML = "You walk up to the group and say “What are you guys talking about?” In response, you get comments like “Since when were you the boss?";
          seventhDecision()
      } else if (decision5 == "later") {
          document.getElementById("textBox").innerHTML = "You ask Anthony about what his friends and him did in the breakroom and he responds with “That’s just guys being guys. When he says this you shoot back with “So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END.";
