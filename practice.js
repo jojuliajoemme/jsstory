@@ -1,34 +1,31 @@
 function eighthDecision() {
-   document.getElementById("textBox").innerHTML = "You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days. Do you accept the vacation days or take this up with your manager’s boss?";
-   if (decision8 == "vacation") {
+     document.getElementById("textBox").innerHTML = "You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days. Do you accept the vacation days or take this up with your manager’s boss?";
+     document.getElementById("OptionA").innerHTML="vacation";
      document.getElementById("textBox").innerHTML = "You accept the extra vacation and use them to go to Hawaii. When you get back from your vacation, you realize you haven’t made any positive change in your work life as you had hoped. You realize you need to be more assertive. THE END.";
-     endGame();
-   } else if (decision8 == "boss") {
-     document.getElementById("textBox").innerHTML = "Your manager’s boss is a woman named Hillary, and she gives you a pay raise. This is not just because she feels bad for you, but because she honestly believes that you deserve it. THE END.";
-     endGame();
-   } 
+     document.getElementById("OptionA").onclick=function(){endGame()};
+     document.getElementById("OptionB").innerHTML="boss";
+     document.getElementById("textBox").innerHTML ="Your manager’s boss is a woman named Hillary, and she gives you a pay raise. This is not just because she feels bad for you, but because she honestly believes that you deserve it. THE END.";
+     document.getElementById("OptionB").onclick=function(){endGame()};
 }
   
  function seventhDecision() {
-   document.getElementById("textBox").innerHTML = "You walk up to the group and say “What are you guys talking about?” In response, you get comments like “Since when were you the boss? Do you talk to your manager about their behavior or make a face at them? ";
-   if (decision7 == "manager") {
+     document.getElementById("textBox").innerHTML = "You walk up to the group and say “What are you guys talking about?” In response, you get comments like “Since when were you the boss? Do you talk to your manager about their behavior or make a face at them? ";
+     document.getElementById("OptionA").innerHTML="manager";
      document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing. Your manager proceeds to mansplain the situation to you. You find your manager’ behavior rude and call him out on his mansplaining. Later, your manager notices your hard work  and gives you a bonus. THE END.";
-     endGame();
-   } else if (decision7 == "face") {
-      document.getElementById("textBox").innerHTML = "Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone. You’re still a valued member of the team but are seen as a secretary as well. THE END.";
-      endGame();
-   }
+     document.getElementById("OptionA").onclick=function(){endGame()};
+     document.getElementById("OptionB").innerHTML="face";
+     document.getElementById("textBox").innerHTML =" Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone. You’re still a valued member of the team but are seen as a secretary as well. THE END.";
+     document.getElementById("OptionB").onclick=function(){endGame()};
 }
     
  function sixthDecision() {
      document.getElementById("textBox").innerHTML = "All the guys reenter the room and stare at you. Someone mutters “Bitch.” They all reluctantly pick up their trash.While they give you looks, you tell them “You know I do the same amount of work as you, and get paid less. The least you can do is clean up after yourself. Do you take this issue of disrespect to your manager or ask for a raise?";
-     if (decision6 == "manager") {
-         document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’ behavior rude and call him out on his mansplaining.You find your manager’ behavior rude and call him out on his mansplaining. THE END";
-        endGame();
-     } else if (decision6 == "raise") {
-         eighthDecision();
-     } 
- }
+     document.getElementById("OptionA").innerHTML="manager";
+     document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’ behavior rude and call him out on his mansplaining.You find your manager’ behavior rude and call him out on his mansplaining. THE END";
+     document.getElementById("OptionA").onclick=function(){endGame()};
+     document.getElementById("OptionB").innerHTML="raise";
+     document.getElementById("OptionB").onclick=function(){eighthDecision()}; 
+ } 
     
  function fifthDecision() {
      document.getElementById("textBox").innerHTML = "Anthony gets really annoyed with you for calling him out. The next day you enter breakroom. Anthony and his friends, Adrian, Logan, and Chase are  all joking around, but they stop when you enter. Do you ask him Anthony about the incident later or confront the group right now?";
