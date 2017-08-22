@@ -49,7 +49,7 @@ function eighthDecision() {
  }
     
    function fourthDecision() {
-     document.getElementById("textBox").innerHTML = "Anthony keeps making this mistake, resulting in time being wasted. Your manager is annoyed and your team gets a bad reputation for not getting work done.Do you take the blame or call Anthony out?";
+     document.getElementById("textBox").innerHTML = "Anthony keeps making this mistake, resulting in time being wasted. Your manager is annoyed and your team gets a bad reputation for not getting work done. Do you take the blame or call Anthony out?";
      if (decision4 == "take") {
          document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence on yourself. THE END";
          endGame();
@@ -75,7 +75,7 @@ function eighthDecision() {
  }
     
  function secondDecision() {
-     document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong, Do you try to keep your cool or tell him what he’s doing wrong? input "keep cool" or "tell him"");
+     document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong, Do you try to keep your cool or tell him what he’s doing wrong?";
      if (decision2 == "keep cool") {
          fourthDecision();
       } else if (decision2 == "tell him") {
@@ -87,7 +87,7 @@ function eighthDecision() {
  }
     
 function firstDecision() {
- document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
+ document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns your coworker Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
     if (decision1 == "dismiss") {
         secondDecision();
    } else if (decision1 == "talk to manager") {
